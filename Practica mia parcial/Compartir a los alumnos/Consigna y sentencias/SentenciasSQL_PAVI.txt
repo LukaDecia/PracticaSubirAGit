@@ -1,0 +1,22 @@
+Sentencias SQL
+
+SELECT MAX(Id) FROM Equipos
+SELECT * FROM Categorias
+SELECT * FROM Posiciones
+SELECT * FROM Jugadores WHERE Id=@IdJugador
+INSERT INTO Equipos VALUES(@NombreEquipo,@FechaCreacion)
+INSERT INTO JugadoresPorEquipos VALUES(@IdJugador,@IdEquipo, @FechaAsignacion)
+SELECT Edad, count(Id) AS 'Cantidad' FROM Jugadores GROUP BY Edad
+SELECT * FROM Jugadores
+
+Datos para acceder a la BD
+- User: examen
+- Pass: Ex4m3n_UTN**
+- BD: ParcialPAV2022
+
+Para acceder a la BD desde internet:
+- Host: 200.69.137.167
+- Puerto: 11444
+
+Para acceder a la BD desde LabSis:
+- Host: maquis, no hace falta puerto
